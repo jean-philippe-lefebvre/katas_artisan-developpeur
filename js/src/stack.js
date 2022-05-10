@@ -1,16 +1,18 @@
 class Stack {
     constructor() {
+				this.value = []
     }
 
     push(value) {
+				this.value.push(value)
     }
 
     pop() {
-        return undefined;
+        return this.value.pop();
     }
 
     count() {
-        return -1;
+        return this.value.length;
     }
 }
 
